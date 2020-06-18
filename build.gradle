@@ -1,0 +1,21 @@
+plugins {
+    id "java"
+    id "application"
+}
+
+sourceCompatibility = 1.8 // java 8
+targetCompatibility = 1.8
+
+mainClassName = "com.ironpanthers.project.Main"
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.12'
+}
+
+wrapper {
+    gradleVersion = "6.0.1"
+}
